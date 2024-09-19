@@ -1,1 +1,270 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*------------home section--------------------------------*/
+
+.wrapper{
+    padding: 0 10%;
+}
+header{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;   
+    padding: 2rem 10% !important;
+}
+nav{
+    display: flex;
+    justify-content: space-between !important;
+
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul a{
+    color: #fff;
+    text-decoration: none;
+}
+.home{
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(7, 22, 41, 0.852)), url(images/Object.png)
+     no-repeat center center/cover;
+    padding-top: 12rem;
+    height: 1093px;
+}
+.hero{
+    color: #fff;
+    text-align: center;
+}
+.hero h1{
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 150.84px;
+}
+.hero span{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 2.15rem;
+}
+.hero-btn button{
+    margin-top: 1.75rem;
+     background: #C271FF;
+     font-size: .875rem;
+     color: #fff;
+     width: 162px;
+     height: 44px;
+     border: none;
+     padding:10px 10px;
+     border-radius: 50px;
+     box-shadow: 0px 2px 20px 0px #00000080;
+}
+.home-second-hero{
+    margin-top: 12rem;
+    text-align: center;
+    color: #fff;
+}
+.home-second-hero h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.flex-images{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between ;
+    gap: 3rem;
+    
+}
+.flex-images >div{
+    width: 150px;
+}
+.flex-images img{
+    width: 150px;
+    border-radius: 50%;
+}
+.flex-images p{
+    font-style: italic;
+}
+
+/*------------purple section-----------------*/
+.purple-section{
+    position: relative;
+    background: #C271FF;
+    color: #fff;
+    padding: 7.25rem 0;
+}
+.upper-color{
+    position: absolute;
+    top: 0px;
+    background: rgb(7, 22, 41);
+    width: 100%;
+    height: 133.33px;
+}
+.flex-content{
+    margin-top: 7.25rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.flex-content:last-child{
+    width: 1260px;
+}
+blockquote{
+    margin-bottom: 2rem;
+    font-size: 22px;
+    
+}
+
+/*------------most popular toturials section-----------------*/
+
+.video-container{
+    margin-bottom: 5rem;
+}
+.popular-h2{
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.75rem;
+    margin-top: 5rem;
+}
+.card-container p{
+   color:#07162980 ; 
+}
+.card-container h4{
+    color: #C271FF;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.card::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(images/play.png) no-repeat center top;
+    margin-top: 4.82rem;
+}
+.small-content{
+    display: flex;
+    gap: 1rem;
+}
+.small-img{
+    width: 30px;
+}
+.rating{
+    color: #C271FF ;
+    display: flex;
+    justify-content: space-between;
+}
+.rating > div{
+    display: flex;
+    gap: .7rem;
+}
+.rating p{
+    color: #C271FF;
+}
+
+/*------------------------membership section--------*/
+
+.membership{
+    background: #071629;
+     padding: 5rem 10%;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 3rem;
+}
+.membership h2{
+    margin-top: 0;
+}
+
+.membership-content{
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
+}
+.membership-content > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+   width: 200px;
+}
+.membership-content > div img{
+    width: 50px ;
+}
+
+/*------------FAQ----------------------*/
+.faq{
+    margin: 5rem 0;
+}
+.faq h2{
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75.42px;
+    text-align: center;
+
+}
+.faq-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15rem;
+    text-align: left;
+}
+.faq-content > div h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    color:#071629 ;
+    margin: 2rem 0;
+}
+.faq-content > div {
+    color:  #07162980;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*-------------------footer--------------------------*/
+
+footer{
+    background: #071629;
+    padding: 5rem 0;
+    color: #fff;
+    
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.social-links > div i{
+    width: 30px;
+}
+footer p{
+    color: #ffffff1f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.08px;
+    text-align: center;
+    margin-top: 3.25rem;
+    
+}

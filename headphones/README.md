@@ -3,7 +3,7 @@
 This is a simple homepage for a fictional "Headphones" brand. The design includes a clean layout with a main hero section, a navigation bar, and a call-to-action button.
 
 ## Project Screenshots
-<img src="/images/home.png">
+<img width="700px" src="images/home.png">
 
 ## Overview
 The Headphones home page is a responsive, minimalist design intended to showcase the brand's offerings. The layout features:

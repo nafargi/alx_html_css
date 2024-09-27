@@ -3,7 +3,6 @@
 This is a simple homepage for a fictional "Headphones" brand. The design includes a clean layout with a main hero section, a navigation bar, and a call-to-action button.
 
 ## Preview
-
 <img src="/images/home.png">
 
 ## Overview

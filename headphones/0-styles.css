@@ -5,17 +5,26 @@
     list-style: none;
     text-decoration: none;
 }
+html,body,main {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background: rgb(12, 20, 39);
     color: #fff;
 }
+
 header{
     max-width: 1000px;
     width: 100%;
     padding-top: 1.23rem;
     position: relative;
     z-index: 1000;
+}
+.mobile-nav{
+    display: none;
 }
 .wrapper{
     padding:0 10%;
@@ -37,10 +46,14 @@ header{
 .navigation ul a:hover{
     color: #FF6565;
 }
-
-.logo img{
-    width: 161px;
+.logo{
+    max-width: 161px;
     height: 32px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .header-home{
     position: relative;
@@ -48,11 +61,13 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
 }
 .main-hero{
     max-width: 1000px;
@@ -62,7 +77,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    padding: 17rem 10%;
+    padding-top: 10rem;
     text-align: center;
 }
 .hero{
@@ -80,13 +95,14 @@ header{
     font-weight: bold;
 }
 .hero-2{
+    margin: 2rem 0 5rem 0;
     max-width: 637px;
     font-size: 1rem;
     line-height: 1.3;
 }
 .btn{
-    cursor: pointer;
-    margin-top: 3rem;
+   cursor: pointer;
+   margin-top: 3rem;
    align-self: center ;
    background-color: #FF6565;
    padding: 15px 25px;
@@ -98,4 +114,63 @@ header{
 }
 .btn:hover{
    opacity: 0.9;
+}
+
+
+@media (max-width: 480px){
+header{
+    display: flex;
+    align-items: start;
+    gap: 25%;
+}  
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid red;
+    margin-left: 250%;
+    margin-top: 1rem;
+}
+#toggle {
+    display: none;
+}
+.menu-icon {
+    display: block;
+}
+#toggle:checked + .menu-icon + .nav-menu {
+   display: flex;
+}
+.nav-menu ul {
+   display: flex;
+   flex-direction: column;
+   
+}
+.nav-menu ul a{
+    color: #fff;
+}
+.nav-menu ul li {
+   margin: 10px 0;
+}
+.mobile-nav{
+   display: block;
+}
+.wrapper{
+    padding: 0 5%;
+}
+.navigation ul{
+    display: none;
+}
+.navigation ul.active{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgb(12, 20, 39);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
 }

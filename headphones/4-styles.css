@@ -37,6 +37,7 @@ header{
     display: flex;
     gap: 3rem;
 }
+
 .navigation ul a{
     color: #fff;
     font-weight: bold;
